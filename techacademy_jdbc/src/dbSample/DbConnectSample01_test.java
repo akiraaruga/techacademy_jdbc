@@ -5,10 +5,12 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.lang.ClassNotFoundException;
 
 public class DbConnectSample01_test {
 
     public static void main(String[] args) {
+        System.out.println("エラーです");
         // データベース接続と結果取得のための変数
         Connection con = null;
         Statement stmt = null;
@@ -22,7 +24,7 @@ public class DbConnectSample01_test {
             con = DriverManager.getConnection(
                 "jdbc:mysql://localhost/world?useSSL=false&allowPublicKeyRetrieval=true",
                 "root",
-                "password"
+                "!49499841a"
             );
 
             // 3. DBとやりとりする窓口（Statementオブジェクト）の作成

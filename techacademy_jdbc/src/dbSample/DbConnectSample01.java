@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.lang.ClassNotFoundException;
 
 public class DbConnectSample01 {
 
@@ -34,7 +35,7 @@ public class DbConnectSample01 {
         rs=stmt.executeQuery(sql);
         
          //6.結果を表示する。
-        while (rs.next()) {
+        while(rs.next()) {
             String name=rs.getString("name");
             System.out.println(name);
         }
