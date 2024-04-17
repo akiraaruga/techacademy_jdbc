@@ -25,7 +25,7 @@ public class DbConnectSample05 {
             con = DriverManager.getConnection(
                 "jdbc:mysql://localhost/world?useSSL=false&allowPublicKeyRetrieval=true",
                 "root",
-                "password"
+                "!49499841a"
             );
 
             String sql = "INSERT INTO city (Name,CountryCode,District,Population) VALUES ('Rafah',?,'Rafah',?)";
